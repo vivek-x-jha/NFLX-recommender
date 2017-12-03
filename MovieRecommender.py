@@ -175,6 +175,6 @@ all_predictions = movie_features.dot(user_prefs.T)
 print(all_predictions)
 
 # add back the ratings_mean column vector to my (our) predictions
-predictions_for_nikhil = all_predictions[:, 0:1] + ratings_mean
-print(predictions_for_nikhil)
+my_predictions = all_predictions[:, 0:1] + ratings_mean
+print(my_predictions)
 print(myRatings)
